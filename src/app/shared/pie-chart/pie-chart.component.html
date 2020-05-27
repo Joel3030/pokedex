@@ -1,0 +1,12 @@
+<div class="row" *ngFor="let stat of stats">
+    <div class="col-12 col-md-3">
+        {{ stat.stat.name | space }}
+    </div>
+    <div class="col-12 col-md-9">
+        <div class="progress mb-1">
+            <div class="progress-bar bg-success" role="progressbar" [style.width.px]="stat.base_stat" aria-valuenow="stat.base_stat" aria-valuemin="" aria-valuemax="100">
+                {{ stat.base_stat }}
+            </div>
+        </div>
+    </div>
+</div>

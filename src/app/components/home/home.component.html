@@ -1,0 +1,21 @@
+<app-loading *ngIf="loading"></app-loading>
+
+<div class="row mb-3" *ngIf="!loading">
+    <div class="col-8">
+        <input name="filterPost" [(ngModel)]="filterPost" class="form-control" type="search " placeholder="Search " aria-label="Search " />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-2 mb-3" *ngFor="let pokemon of pokemons | filter: filterPost">
+        <div class="card animated fadeIn puntero">
+            <div (click)="showPokemon(pokemon)" class="card puntero">
+                <img [src]="pokemon.image | noImage" class="card-img-top" alt="... " />
+                <div class="card-body">
+                    <h1 class="card-title">{{ pokemon.pokemonId }}</h1>
+                    <h5 class="card-title">{{ pokemon.name }}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

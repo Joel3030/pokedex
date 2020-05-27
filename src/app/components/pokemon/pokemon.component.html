@@ -1,0 +1,91 @@
+<app-loading *ngIf="loadingPokemon"></app-loading>
+
+<div class="row animated fadeIn container" *ngIf="!loadingPokemon">
+    <div class="col-6 text-left mt-3">
+        <h1># {{ pokemon.id }}</h1>
+    </div>
+
+    <div class="col-6 text-right mt-3">
+        <button routerLink="/home" class="btn btn-outline-danger">
+      Regresar
+    </button>
+    </div>
+
+    <div class="col-12 text-center m-3">
+        <h1>profile</h1>
+    </div>
+
+    <div class="col-12 text-center">
+        <!-- slice -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item" [ngClass]="{ active: i == 2 }" *ngFor="let item of pokemon.images; let i = index">
+                    <img [src]="item" class="img-thumbnail img-circle" />
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- slice -->
+        <div class="title">
+            <h2>{{ pokemon.name }}</h2>
+        </div>
+    </div>
+
+    <div class="col-12 text-center m-3">
+        <h1>profile</h1>
+    </div>
+
+    <div class="container cont-text">
+        <div class="row">
+            <div class="col-12">
+                <app-pie-chart [stats]="stats"></app-pie-chart>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <ul class="text-left">
+                    <label>Base experience:</label>
+                    <ul class="text-center list-inline">
+                        <li>{{ pokemon.base_experience }}</li>
+                    </ul>
+                    <label>Height:</label>
+
+                    <ul class="text-center list-inline">
+                        <li class="font-weight-light">{{ pokemon.height }}</li>
+                    </ul>
+
+                    <label>Weight:</label>
+                    <ul class="text-center list-inline">
+                        <li class="font-weight-light">{{ pokemon.weight }}</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6">
+                <ul class="text-left">
+                    <label>Types:</label>
+
+                    <ul class="text-center list-inline" *ngFor="let item of pokemon.types">
+                        <li class="font-weight-light">{{ item.type.name }}</li>
+                    </ul>
+
+                    <label>abilities:</label>
+                    <ul class="text-center list-inline" *ngFor="let item of pokemon.abilities">
+                        <li class="font-weight-light">{{ item.ability.name }}</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col mb-5">
+        <app-evolutions [allEvolutions]="allEvolutions"></app-evolutions>
+    </div>
+</div>
