@@ -1,0 +1,46 @@
+<div *ngIf="(isLoading$ | async) === false && pokemon" class="container">
+	<div class="content">
+		<div class="shape">
+			<img src="assets\images\pokémon_logo.png" alt="pokemon_logo" />
+		</div>
+
+		<div class="pokemon-img">
+			<div class="pokemon-img__item">
+				<img
+					class="animate__animated animate__fadeInLeft"
+					[src]="pokemon?.defaultImage"
+					alt="pokemon_img" />
+			</div>
+		</div>
+
+		<div class="pokemon-container" [pokemonCardType]="type">
+			<div class="pokemon-container__content animate__animated animate__zoomIn">
+				<h1 class="pokemon-container__title">
+					{{ pokemon?.detail?.name | titlecase }}
+				</h1>
+				<div class="pokemon-ctr">
+					<div class="pokemon-profile">
+						<h3>
+							Height: <small>{{ pokemon?.detail?.height }}</small>
+						</h3>
+						<h3>
+							Weight: <small>{{ pokemon?.detail?.weight }}</small>
+						</h3>
+						<h3>
+							Experience: <small>{{ pokemon?.detail?.base_experience }}</small>
+						</h3>
+					</div>
+
+					<span class="hr-vertical"></span>
+
+					<div class="row">
+						<div class="col-2 m-2">
+							80% <br />
+							<small>hp</small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

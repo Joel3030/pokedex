@@ -1,0 +1,1018 @@
+:root {
+	--color-card: #fff;
+	--color-card-text: #212121;
+
+	--background-color-poison: #b97fc9;
+
+	--background-color-grass: #9bcc50;
+
+	--background-color-fire: #fd7d24;
+
+	--background-color-water: #4592c4;
+
+	--background-color-bug: #729f3f;
+
+	--background-color-normal: #a4acaf;
+
+	--background-color-electric: #ffe800;
+
+	--background-color-flying: #3dc7ef;
+
+	--background-color-flying-secondary: #bdb9b8;
+
+	--background-color-ground: #f7de3f;
+
+	--background-color-ground-secondary: #ab9842;
+
+	--background-color-fairy: #fdb9e9;
+
+	--background-color-psychic: #f366b9;
+
+	--background-color-fighting: #d56723;
+
+	--background-color-rock: #a38c21;
+
+	--background-color-steel: #9eb7b8;
+
+	--background-color-ice: #51c4e7;
+
+	--background-color-ghost: #7b62a3;
+}
+
+.type {
+	border-radius: 6px;
+	font-size: 20px;
+	line-height: 18px;
+	text-align: center;
+	padding: 0.5rem 1.2rem;
+	margin: 2em 0.25rem 1em 0.25rem;
+}
+
+.background-color-poison {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-poison) 50%,
+		var(--background-color-poison) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-poison) 50%,
+		var(--background-color-poison) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-poison) 50%,
+		var(--background-color-poison) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-poison) 50%,
+		var(--background-color-poison) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-poison) 50%,
+		var(--background-color-poison) 50%
+	);
+	background-color: var(--background-color-poison);
+	color: var(--color-card-text);
+}
+
+.background-color-card-poison {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-poison) 50%,
+		var(--color-card) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-poison) 50%,
+		var(--color-card) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-poison) 50%,
+		var(--color-card) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-poison) 50%,
+		var(--color-card) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-poison) 50%,
+		var(--color-card) 50%
+	);
+	background-color: var(--background-color-poison);
+	color: var(--color-card-text);
+}
+
+.background-color-grass {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-grass) 50%,
+		var(--background-color-grass) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-grass) 50%,
+		var(--background-color-grass) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-grass) 50%,
+		var(--background-color-grass) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-grass) 50%,
+		var(--background-color-grass) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-grass) 50%,
+		var(--background-color-grass) 50%
+	);
+	background-color: var(--background-color-grass);
+	color: var(--color-card-text);
+}
+
+.background-color-card-grass {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-grass) 50%,
+		var(--color-card) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-grass) 50%,
+		var(--color-card) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-grass) 50%,
+		var(--color-card) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-grass) 50%,
+		var(--color-card) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-grass) 50%,
+		var(--color-card) 50%
+	);
+	background-color: var(--background-color-grass);
+	color: var(--color-card-text);
+}
+
+.background-color-fire {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-fire) 50%,
+		var(--background-color-fire) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-fire) 50%,
+		var(--background-color-fire) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-fire) 50%,
+		var(--background-color-fire) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-fire) 50%,
+		var(--background-color-fire) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-fire) 50%,
+		var(--background-color-fire) 50%
+	);
+	background-color: var(--background-color-fire);
+	color: var(--color-card-text);
+}
+
+.background-color-card-fire {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-fire) 50%,
+		var(--color-card) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-fire) 50%,
+		var(--color-card) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-fire) 50%,
+		var(--color-card) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-fire) 50%,
+		var(--color-card) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-fire) 50%,
+		var(--color-card) 50%
+	);
+	background-color: var(--background-color-fire);
+	color: var(--color-card-text);
+}
+
+.background-color-flying {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-flying),
+		var(--background-color-flying-secondary) 100%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-flying),
+		var(--background-color-flying-secondary) 100%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-flying),
+		var(--background-color-flying-secondary) 100%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-flying),
+		var(--background-color-flying-secondary) 100%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-flying),
+		var(--background-color-flying-secondary) 100%
+	);
+	background-color: var(--background-color-flying);
+	color: var(--color-card-text);
+}
+
+.background-color-card-flying {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-flying),
+		var(--background-color-flying-secondary) 50%,
+		var(--color-card) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-flying),
+		var(--background-color-flying-secondary) 50%,
+		var(--color-card) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-flying),
+		var(--background-color-flying-secondary) 50%,
+		var(--color-card) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-flying),
+		var(--background-color-flying-secondary) 50%,
+		var(--color-card) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-flying),
+		var(--background-color-flying-secondary) 50%,
+		var(--color-card) 50%
+	);
+	background-color: var(--background-color-flying);
+	color: var(--color-card-text);
+}
+
+.background-color-water {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-water) 50%,
+		var(--background-color-water) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-water) 50%,
+		var(--background-color-water) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-water) 50%,
+		var(--background-color-water) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-water) 50%,
+		var(--background-color-water) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-water) 50%,
+		var(--background-color-water) 50%
+	);
+	background-color: var(--background-color-water);
+	color: var(--color-card-text);
+}
+
+.background-color-card-water {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-water) 50%,
+		var(--color-card) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-water) 50%,
+		var(--color-card) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-water) 50%,
+		var(--color-card) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-water) 50%,
+		var(--color-card) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-water) 50%,
+		var(--color-card) 50%
+	);
+	background-color: var(--background-color-water);
+	color: var(--color-card-text);
+}
+
+.background-color-bug {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-bug) 50%,
+		var(--background-color-bug) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-bug) 50%,
+		var(--background-color-bug) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-bug) 50%,
+		var(--background-color-bug) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-bug) 50%,
+		var(--background-color-bug) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-bug) 50%,
+		var(--background-color-bug) 50%
+	);
+	background-color: var(--background-color-bug);
+	color: var(--color-card-text);
+}
+
+.background-color-card-bug {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-bug) 50%,
+		var(--color-card) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-bug) 50%,
+		var(--color-card) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-bug) 50%,
+		var(--color-card) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-bug) 50%,
+		var(--color-card) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-bug) 50%,
+		var(--color-card) 50%
+	);
+	background-color: var(--background-color-bug);
+	color: var(--color-card-text);
+}
+
+.background-color-normal {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-normal) 50%,
+		var(--background-color-normal) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-normal) 50%,
+		var(--background-color-normal) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-normal) 50%,
+		var(--background-color-normal) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-normal) 50%,
+		var(--background-color-normal) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-normal) 50%,
+		var(--background-color-normal) 50%
+	);
+	background-color: var(--background-color-normal);
+	color: var(--color-card-text);
+}
+
+.background-color-card-normal {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-normal) 50%,
+		var(--color-card) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-normal) 50%,
+		var(--color-card) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-normal) 50%,
+		var(--color-card) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-normal) 50%,
+		var(--color-card) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-normal) 50%,
+		var(--color-card) 50%
+	);
+	background-color: var(--background-color-normal);
+	color: var(--color-card-text);
+}
+
+.background-color-electric {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-electric) 50%,
+		var(--background-color-electric) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-electric) 50%,
+		var(--background-color-electric) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-electric) 50%,
+		var(--background-color-electric) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-electric) 50%,
+		var(--background-color-electric) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-electric) 50%,
+		var(--background-color-electric) 50%
+	);
+	background-color: var(--background-color-electric);
+	color: var(--color-card-text);
+}
+
+.background-color-card-electric {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-electric) 50%,
+		var(--color-card) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-electric) 50%,
+		var(--color-card) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-electric) 50%,
+		var(--color-card) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-electric) 50%,
+		var(--color-card) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-electric) 50%,
+		var(--color-card) 50%
+	);
+	background-color: var(--background-color-electric);
+	color: var(--color-card-text);
+}
+
+.background-color-ground {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-ground),
+		var(--background-color-ground-secondary) 100%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-ground),
+		var(--background-color-ground-secondary) 100%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-ground),
+		var(--background-color-ground-secondary) 100%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-ground),
+		var(--background-color-ground-secondary) 100%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-ground),
+		var(--background-color-ground-secondary) 100%
+	);
+	background-color: var(--background-color-ground);
+	color: var(--color-card-text);
+}
+
+.background-color-card-ground {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-ground),
+		var(--background-color-ground-secondary),
+		50% var(--color-card) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-ground),
+		var(--background-color-ground-secondary),
+		50% var(--color-card) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-ground),
+		var(--background-color-ground-secondary),
+		50% var(--color-card) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-ground),
+		var(--background-color-ground-secondary),
+		50% var(--color-card) 50%
+	);
+
+	background: linear-gradient(
+		180deg,
+		var(--background-color-ground),
+		var(--background-color-ground-secondary) 50%,
+		var(--color-card) 50%
+	);
+	background-color: var(--background-color-ground);
+	color: var(--color-card-text);
+}
+
+.background-color-fairy {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-fairy) 50%,
+		var(--background-color-fairy) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-fairy) 50%,
+		var(--background-color-fairy) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-fairy) 50%,
+		var(--background-color-fairy) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-fairy) 50%,
+		var(--background-color-fairy) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-fairy) 50%,
+		var(--background-color-fairy) 50%
+	);
+	background-color: var(--background-color-fairy);
+	color: var(--color-card-text);
+}
+
+.background-color-card-fairy {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-fairy) 50%,
+		var(--color-card) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-fairy) 50%,
+		var(--color-card) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-fairy) 50%,
+		var(--color-card) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-fairy) 50%,
+		var(--color-card) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-fairy) 50%,
+		var(--color-card) 50%
+	);
+	background-color: var(--background-color-fairy);
+	color: var(--color-card-text);
+}
+
+.background-color-psychic {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-psychic) 50%,
+		var(--background-color-psychic) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-psychic) 50%,
+		var(--background-color-psychic) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-psychic) 50%,
+		var(--background-color-psychic) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-psychic) 50%,
+		var(--background-color-psychic) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-psychic) 50%,
+		var(--background-color-psychic) 50%
+	);
+	background-color: var(--background-color-psychic);
+	color: var(--color-card-text);
+}
+
+.background-color-card-psychic {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-psychic) 50%,
+		var(--color-card) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-psychic) 50%,
+		var(--color-card) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-psychic) 50%,
+		var(--color-card) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-psychic) 50%,
+		var(--color-card) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-psychic) 50%,
+		var(--color-card) 50%
+	);
+	background-color: var(--background-color-psychic);
+	color: var(--color-card-text);
+}
+
+.background-color-fighting {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-fighting) 50%,
+		var(--background-color-fighting) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-fighting) 50%,
+		var(--background-color-fighting) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-fighting) 50%,
+		var(--background-color-fighting) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-fighting) 50%,
+		var(--background-color-fighting) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-fighting) 50%,
+		var(--background-color-fighting) 50%
+	);
+	background-color: var(--background-color-fighting);
+	color: var(--color-card-text);
+}
+.background-color-card-fighting {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-fighting) 50%,
+		var(--color-card) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-fighting) 50%,
+		var(--color-card) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-fighting) 50%,
+		var(--color-card) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-fighting) 50%,
+		var(--color-card) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-fighting) 50%,
+		var(--color-card) 50%
+	);
+	background-color: var(--background-color-fighting);
+	color: var(--color-card-text);
+}
+
+.background-color-rock {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-rock) 50%,
+		var(--background-color-rock) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-rock) 50%,
+		var(--background-color-rock) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-rock) 50%,
+		var(--background-color-rock) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-rock) 50%,
+		var(--background-color-rock) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-rock) 50%,
+		var(--background-color-rock) 50%
+	);
+	background-color: var(--background-color-rock);
+	color: var(--color-card-text);
+}
+
+.background-color-card-rock {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-rock) 50%,
+		var(--color-card) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-rock) 50%,
+		var(--color-card) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-rock) 50%,
+		var(--color-card) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-rock) 50%,
+		var(--color-card) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-rock) 50%,
+		var(--color-card) 50%
+	);
+	background-color: var(--background-color-rock);
+	color: var(--color-card-text);
+}
+
+.background-color-steel {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-steel) 50%,
+		var(--background-color-steel) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-steel) 50%,
+		var(--background-color-steel) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-steel) 50%,
+		var(--background-color-steel) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-steel) 50%,
+		var(--background-color-steel) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-steel) 50%,
+		var(--background-color-steel) 50%
+	);
+	background-color: var(--background-color-steel);
+	color: var(--color-card-text);
+}
+.background-color-card-steel {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-steel) 50%,
+		var(--color-card) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-steel) 50%,
+		var(--color-card) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-steel) 50%,
+		var(--color-card) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-steel) 50%,
+		var(--color-card) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-steel) 50%,
+		var(--color-card) 50%
+	);
+	background-color: var(--background-color-steel);
+	color: var(--color-card-text);
+}
+
+.background-color-ice {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-ice) 50%,
+		var(--background-color-ice) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-ice) 50%,
+		var(--background-color-ice) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-ice) 50%,
+		var(--background-color-ice) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-ice) 50%,
+		var(--background-color-ice) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-ice) 50%,
+		var(--background-color-ice) 50%
+	);
+	background-color: var(--background-color-ice);
+	color: var(--color-card-text);
+}
+
+.background-color-card-ice {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-ice) 50%,
+		var(--color-card) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-ice) 50%,
+		var(--color-card) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-ice) 50%,
+		var(--color-card) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-ice) 50%,
+		var(--color-card) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-ice) 50%,
+		var(--color-card) 50%
+	);
+	background-color: var(--background-color-ice);
+	color: var(--color-card-text);
+}
+
+.background-color-ghost {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-ghost) 50%,
+		var(--background-color-ghost) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-ghost) 50%,
+		var(--background-color-ghost) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-ghost) 50%,
+		var(--background-color-ghost) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-ghost) 50%,
+		var(--background-color-ghost) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-ghost) 50%,
+		var(--background-color-ghost) 50%
+	);
+	background-color: var(--background-color-ghost);
+	color: var(--color-card-text);
+}
+
+.background-color-card-ghost {
+	background: -webkit-linear-gradient(
+		180deg,
+		var(--background-color-ghost) 50%,
+		var(--color-card) 50%
+	);
+	background: -ms-linear-gradient(
+		180deg,
+		var(--background-color-ghost) 50%,
+		var(--color-card) 50%
+	);
+	background: -moz-linear-gradient(
+		180deg,
+		var(--background-color-ghost) 50%,
+		var(--color-card) 50%
+	);
+	background: -o-linear-gradient(
+		180deg,
+		var(--background-color-ghost) 50%,
+		var(--color-card) 50%
+	);
+	background: linear-gradient(
+		180deg,
+		var(--background-color-ghost) 50%,
+		var(--color-card) 50%
+	);
+	background-color: var(--background-color-ghost);
+	color: var(--color-card-text);
+}

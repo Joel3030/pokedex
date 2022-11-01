@@ -1,0 +1,24 @@
+<div
+	class="card"
+	[pokemonCardType]="pokemon.types[0].type.name"
+	(click)="goToPokemon(pokemon.detail.id)">
+	<div class="card-header">
+		<img
+			sizes="(max-width: 600px) 480px,
+         800px"
+			[src]="pokemon.defaultImage" />
+		<div class="name">
+			<h2>{{ pokemon.detail.name | titlecase }}</h2>
+		</div>
+	</div>
+	<div class="card-body">
+		<p>
+			{{ pokemon.versions[0].flavor_text }}
+		</p>
+		<div class="card-footer">
+			<span [pokemonType]="item.type.name" *ngFor="let item of pokemon.types">{{
+				item.type.name | titlecase
+			}}</span>
+		</div>
+	</div>
+</div>

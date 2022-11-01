@@ -1,6 +1,14 @@
-@import "animate.css";
-@import "assets\fontawesome\css\all.css";
+@import 'animate.css';
+@import 'assets/fontawesome/css/all.css';
+@import 'assets/scss/pokemon-types-colors.scss';
 
-/* #FFCB05 */
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
 
-/* #3C5AA6 */
+body {
+	background-color: #3c5aa6;
+	// color: #ffcb05;
+}
