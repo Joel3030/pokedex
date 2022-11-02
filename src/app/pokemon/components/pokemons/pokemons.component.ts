@@ -30,7 +30,6 @@ export class PokemonsComponent implements OnInit {
 		this.pokemonService.getPokemons(this.offset).subscribe({
 			next: (resp) => {
 				this.pokemons = [...this.pokemons, ...resp];
-				console.log(this.pokemons);
 				this.loadingService.hide();
 			},
 		});
