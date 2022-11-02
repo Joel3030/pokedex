@@ -17,18 +17,24 @@ export class PokemonService {
 		return this.http.get(`${this.apiUrl}?offset=${offset}&limit=20`).pipe(
 			map((data: any) => data.results),
 			concatMap((results: any) => results),
-			concatMap((pokemon: any) => this.getPokemonByUrl(pokemon.url)),
+			concatMap((pokemon: any) => this.getSimplePokemon(pokemon.url)),
 			toArray()
+		);
+	}
+
+	getSimplePokemon(url: string) {
+		return this.http.get(url).pipe(
+			map((pokemon: any) => {
+				pokemon.defaultImage = pokemon.sprites.other.dream_world.front_default;
+
+				return pokemon;
+			})
 		);
 	}
 
 	getPokemon(id: string) {
 		const url = `${this.apiUrl}/${id}`;
 
-		return this.getPokemonByUrl(url);
-	}
-
-	private getPokemonByUrl(url: string) {
 		return this.http.get(url).pipe(
 			mergeMap((detail: any) =>
 				forkJoin(

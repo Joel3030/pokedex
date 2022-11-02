@@ -17,6 +17,7 @@ export class PokemonsComponent implements OnInit {
 	) {}
 
 	ngOnInit(): void {
+		this.loadingService.show();
 		this.getPokemons();
 	}
 
@@ -26,10 +27,10 @@ export class PokemonsComponent implements OnInit {
 	}
 
 	private getPokemons() {
-		this.loadingService.show();
 		this.pokemonService.getPokemons(this.offset).subscribe({
 			next: (resp) => {
 				this.pokemons = [...this.pokemons, ...resp];
+				console.log(this.pokemons);
 				this.loadingService.hide();
 			},
 		});

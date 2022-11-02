@@ -9,6 +9,7 @@ import { PokemonTypeDirective } from './directives/pokemon-type.directive';
 import { PokemonCardTypeDirective } from './directives/pokemon-card-type.directive';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { SharedModule } from '../shared/shared.module';
+import { NoImageDirective } from './directives/no-image.directive';
 
 @NgModule({
 	declarations: [
@@ -17,6 +18,7 @@ import { SharedModule } from '../shared/shared.module';
 		CardComponent,
 		PokemonTypeDirective,
 		PokemonCardTypeDirective,
+		NoImageDirective,
 	],
 	imports: [
 		CommonModule,

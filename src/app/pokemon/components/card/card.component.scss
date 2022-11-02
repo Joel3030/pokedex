@@ -28,7 +28,7 @@
 
 	.card-body {
 		position: relative;
-		top: -140px;
+		top: -100px;
 		padding: 10px 15px;
 		color: #111;
 		text-align: center;
@@ -44,7 +44,7 @@
 
 .card:hover {
 	transition-delay: 0.2s;
-	height: 250px;
+	height: 200px;
 	cursor: pointer;
 
 	.card-body {
